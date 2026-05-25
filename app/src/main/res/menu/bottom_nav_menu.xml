@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/appsFragment"
+        android:icon="@drawable/ic_apps"
+        android:title="Apps" />
+
+    <item
+        android:id="@+id/wifiFragment"
+        android:icon="@drawable/ic_wifi"
+        android:title="Wi-Fi" />
+
+    <item
+        android:id="@+id/qrFragment"
+        android:icon="@drawable/ic_qr_code"
+        android:title="QR Scan" />
+
+</menu>

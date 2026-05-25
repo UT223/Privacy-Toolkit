@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.privacytoolkit.ui.dashboard.DashboardFragment"
+        android:label="Privacy Toolkit"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_apps"
+            app:destination="@id/appsFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_wifi"
+            app:destination="@id/wifiFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_qr"
+            app:destination="@id/qrFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_about"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/appsFragment"
+        android:name="com.privacytoolkit.ui.apps.AppsFragment"
+        android:label="App Permissions"
+        tools:layout="@layout/fragment_apps" />
+
+    <fragment
+        android:id="@+id/wifiFragment"
+        android:name="com.privacytoolkit.ui.wifi.WifiFragment"
+        android:label="Wi-Fi Security"
+        tools:layout="@layout/fragment_wifi" />
+
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.privacytoolkit.ui.qr.QRFragment"
+        android:label="QR Scanner"
+        tools:layout="@layout/fragment_qr" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.privacytoolkit.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>

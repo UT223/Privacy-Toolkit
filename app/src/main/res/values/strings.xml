@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Privacy Toolkit</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_wifi">Wi-Fi</string>
+    <string name="nav_qr">QR Scanner</string>
+    <string name="nav_about">About</string>
+
+    <!-- Dashboard -->
+    <string name="privacy_score">Privacy Score</string>
+    <string name="scan_apps_cta">Scan Apps Now</string>
+    <string name="on_device_notice">All analysis runs 100% on-device. No data is ever uploaded.</string>
+
+    <!-- Apps module -->
+    <string name="scanning_apps">Scanning installed apps…</string>
+    <string name="rescan">Re-scan</string>
+    <string name="no_sensitive_permissions">No sensitive permissions</string>
+
+    <!-- Wi-Fi module -->
+    <string name="check_network">Re-check Network</string>
+    <string name="network_history">Network History</string>
+
+    <!-- QR module -->
+    <string name="scan_another">Scan Another</string>
+    <string name="scanned_content">Scanned Content</string>
+    <string name="grant_camera">Grant Camera Permission</string>
+    <string name="camera_required">Camera permission required to scan QR codes.</string>
+    <string name="scan_history">Scan History</string>
+
+    <!-- Risk labels -->
+    <string name="risk_safe">Safe</string>
+    <string name="risk_low">Low</string>
+    <string name="risk_medium">Medium</string>
+    <string name="risk_high">High</string>
+</resources>

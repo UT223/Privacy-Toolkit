@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Custom layout for the ZXing embedded scanner.
+  Replaces the default ZXing layout so we control the viewfinder appearance.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/zxing_barcode_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.journeyapps.barcodescanner.ViewfinderView
+        android:id="@+id/zxing_viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_possible_result_points="@color/primary_purple"
+        app:zxing_result_view="#b0000000"
+        app:zxing_viewfinder_laser="@color/primary_purple"
+        app:zxing_viewfinder_mask="#60000000" />
+
+    <TextView
+        android:id="@+id/zxing_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#7F000000"
+        android:text="Point camera at a QR code"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp" />
+
+</merge>
